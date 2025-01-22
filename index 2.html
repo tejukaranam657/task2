@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Navigation Bar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 20px;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      display: block;
+    }
+
+    nav ul li a:hover {
+      background-color: #575757;
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #333;
+      min-width: 200px;
+      z-index: 1;
+    }
+
+    nav ul li:hover .dropdown {
+      display: block;
+    }
+
+    .dropdown a {
+      padding: 12px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .dropdown a:hover {
+      background-color: #575757;
+    }
+
+    .cta-btn {
+      background-color: #f39c12;
+      padding: 10px 20px;
+      border-radius: 5px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .cta-btn:hover {
+      background-color: #e67e22;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a>
+        <div class="dropdown">
+          <a href="#">Web Design</a>
+          <a href="#">SEO Services</a>
+          <a href="#">Digital Marketing</a>
+          <a href="#">Consulting</a>
+
+        </div>
+      </li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#"> Portfolio</a></li>
+      <li><a href="#">Contact</a></li>
+      
+    </ul>
+    <a href="#" class="cta-btn">Get a Quote</a>
+  </nav>
+
+</body>
+</html>
+
+
+
+
